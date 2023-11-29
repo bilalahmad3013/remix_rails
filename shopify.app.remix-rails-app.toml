@@ -1,0 +1,28 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "remix-rails-app"
+client_id = "c46b2bc684ff25035d8fc1a34ef310b2"
+application_url = "https://elevation-wc-austria-burns.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://elevation-wc-austria-burns.trycloudflare.com/auth/callback",
+  "https://elevation-wc-austria-burns.trycloudflare.com/auth/shopify/callback",
+  "https://elevation-wc-austria-burns.trycloudflare.com/api/auth/callback",
+  "https://elevation-wc-austria-burns.trycloudflare.com/.shopify/graphiql/auth/callback"
+]
+
+[webhooks]
+api_version = "2023-10"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "ongraph-store121.myshopify.com"
