@@ -3,5 +3,5 @@
 .env
 .env.*
 
-shopify.app.remix-rails-app
-shopify.app
+shopify.app.remix-rails-app.toml
+shopify.app.toml
